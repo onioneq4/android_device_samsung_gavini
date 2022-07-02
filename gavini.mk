@@ -29,6 +29,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/fstab.samsunggavini:root/fstab.samsunggavini \
     $(LOCAL_PATH)/rootdir/init.samsunggavini.rc:root/init.samsunggavini.rc \
+    $(LOCAL_PATH)/rootdir/init.recovery.samsunggavini.rc:root/init.recovery.samsunggavini.rc \
     $(LOCAL_PATH)/rootdir/ueventd.samsunggavini.rc:root/ueventd.samsunggavini.rc
 
 # Gps
