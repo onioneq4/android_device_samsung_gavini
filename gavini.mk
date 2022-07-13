@@ -17,6 +17,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/tee/libbassapp_ssw:system/lib/tee/libbassapp_ssw \
     $(LOCAL_PATH)/tee/smcl_ta_8500bx_secure.ssw:system/lib/tee/smcl_ta_8500bx_secure.ssw 
 
+# STE
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/ste_modem.sh:system/etc/ste_modem.sh
+
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     mobiledata.interfaces=pdp0,wlan0,gprs,ppp0 \
