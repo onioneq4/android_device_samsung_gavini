@@ -1,7 +1,6 @@
 -include device/samsung/u8500-common/BoardCommonConfig.mk
 
 TARGET_OTA_ASSERT_DEVICE := gavini,i8530,GT-I8530
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/gavini/include
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/gavini
@@ -15,3 +14,6 @@ BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/samsung/gavini/vibrator/vibrat
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/gavini/rootdir/fstab.samsunggavini
+
+# Disable legacy sensors using because janice has gyro
+BOARD_USE_LEGACY_SENSORS_FUSION := false
